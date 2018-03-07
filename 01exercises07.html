@@ -1,0 +1,46 @@
+<html>
+  <head>
+    <title>Weekday Message</title>
+    <script>
+      var message = "";
+      var date = new Date();
+      var dayOfWeek = date.getDay();
+      function dailyMessage() {
+        switch(dayOfWeek) {
+          case 0 :
+            message = "It's Sunday";
+            break;
+          case 1 :
+            message = "It's Monday";
+            break;
+          case 2 :
+            message = "It's Tuesday";
+            break;
+          case 3 :
+            message = "It's Wednesday"
+            break;
+            case 4 :
+              message = "It's Thursday"
+              break;
+            case 5 :
+              message = "It's Friday"
+              break;
+            case 6 :
+              message = "It's Saturday"
+              break;
+          default :
+            message = "What day is it?"
+        }
+
+        document.getElementById("div01").innerHTML = message;
+      }
+    </script>
+  </head>
+  <body>
+    Daily Message: <br />
+    <div id="div01"></div>
+    <script>
+      dailyMessage();
+    </script>
+  </body>
+</html>
