@@ -1,0 +1,16 @@
+<html>
+<head>
+    <title>Loops and Control</title>
+</head>
+<body>
+    <script>
+        var months = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
+        var message = "";
+        var monthNumber = 1;
+        for (i in months) {
+            message += 'Month ' + monthNumber + ' is ' + months[i] + '\n';
+            monthNumber ++;
+        }
+        alert(message);
+    </script>
+</body>
